@@ -1,12 +1,23 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import BrightLifeNavbar from "@/components/BrightLifeNavbar";
+import BrightLifeHero from "@/components/BrightLifeHero";
+import BrightLifeAbout from "@/components/BrightLifeAbout";
+import BrightLifeImpact from "@/components/BrightLifeImpact";
+import BrightLifeProjects from "@/components/BrightLifeProjects";
+import BrightLifeDonation from "@/components/BrightLifeDonation";
+import BrightLifeGallery from "@/components/BrightLifeGallery";
+import BrightLifeFooter from "@/components/BrightLifeFooter";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="selection:bg-yellow-300 selection:text-foreground font-body text-foreground">
+      <BrightLifeNavbar />
+      <BrightLifeHero />
+      <BrightLifeAbout />
+      <BrightLifeImpact />
+      <BrightLifeProjects />
+      <BrightLifeDonation />
+      <BrightLifeGallery />
+      <BrightLifeFooter />
     </div>
   );
 };
